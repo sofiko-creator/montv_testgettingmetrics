@@ -210,7 +210,6 @@ class DataProcessor:
             none_offsets.sort(reverse=True)
 
         result = not missing_fields and not extra_fields and not none_fields
-        # Добавить ключи; разделить метод
         return (result, missing_fields, extra_fields, none_fields,
                 missing_offsets, extra_offsets, none_offsets, none_probes_qamchannel, none_probes_src_ip,
                 none_probes_dest_ip)
